@@ -6,7 +6,7 @@ while(True):
     a=int(input("Enter a number1:"))
     b=int(input("Enter a number2:"))
     print("="*40)
-    c=input("enter your choice:'+' '*' '-' '/' to exit enter 'QUIT' :") 
+    c=input("enter your choice:'+' '*' '-' '/' to exit enter 'QUIT' :").strip().lower()
     match c:
         case '+':
             print("Addition of",a,"&",b,"is: ",a+b)
@@ -25,7 +25,7 @@ while(True):
             else:
                 print("Division of",a,"&",b,"is: ",a/b)
                 
-        case 'QUIT':
+        case 'quit':
             print("Good bye!")
             break
         case _:
